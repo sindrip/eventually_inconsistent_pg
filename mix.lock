@@ -1,0 +1,3 @@
+%{
+  "ex_unit_cluster": {:hex, :ex_unit_cluster, "0.1.0", "66a78694bab1662aafbb5facfdb42dad34b27a641ca03e34c909f05fd55db9db", [:mix], [], "hexpm", "cf2d353513c7a336a66b8041890a425bf7a8aa86e762d680c931eb6c2e1a3e6a"},
+}

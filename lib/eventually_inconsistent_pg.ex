@@ -1,18 +1,16 @@
 defmodule EventuallyInconsistentPg do
   @moduledoc """
-  Documentation for `EventuallyInconsistentPg`.
+  `EventuallyInconsistentPg` implements a subset of the `:pg` API
+  and only supports one global scope.
   """
 
-  @doc """
-  Hello world.
+  alias EventuallyInconsistentPg.Core
 
-  ## Examples
+  def get_members(group), do: Core.get_members(group)
 
-      iex> EventuallyInconsistentPg.hello()
-      :world
+  def join(group, pidOrPids), do: Core.join(group, pidOrPids)
 
-  """
-  def hello do
-    :world
-  end
+  def leave(group, pidOrPids), do: Core.leave(group, pidOrPids)
+
+  def which_groups(), do: Core.which_groups()
 end
